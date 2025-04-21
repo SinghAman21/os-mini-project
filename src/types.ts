@@ -16,3 +16,18 @@ export interface TaskQueue {
   waiting: Task[];
   completed: Task[];
 }
+
+export interface Passenger {
+  id: string;
+  name: string;
+  ticketClass: 'first' | 'business' | 'normal';
+  checkInTime: Date; // Added property
+  status: 'waiting' | 'in-progress' | 'completed';
+  tasks?: Task[]; // List of tasks associated with the passenger
+}
+
+export interface Queue {
+  first: Passenger[];
+  business: Passenger[];
+  normal: Passenger[];
+}

@@ -1,6 +1,5 @@
-import React from 'react';
 import { UserCheck } from 'lucide-react';
-import type { Passenger, Queue } from '../types';
+import type { Queue } from '../types';
 
 interface ReceptionistDashboardProps {
   queue: Queue;
@@ -8,7 +7,7 @@ interface ReceptionistDashboardProps {
 }
 
 export function ReceptionistDashboard({ queue, onServeNext }: ReceptionistDashboardProps) {
-  const getTotalWaiting = () => {
+  const getTotalWaiting = (): number => {
     return queue.first.length + queue.business.length + queue.normal.length;
   };
 

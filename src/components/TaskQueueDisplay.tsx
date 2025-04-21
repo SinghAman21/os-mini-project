@@ -1,5 +1,4 @@
-import React from 'react';
-import { Users, Clock, CheckCircle } from 'lucide-react';
+import { Users, CheckCircle } from 'lucide-react';
 import type { Task } from '../types';
 
 interface TaskQueueDisplayProps {
@@ -8,7 +7,7 @@ interface TaskQueueDisplayProps {
   currentTask?: Task;
 }
 
-export function TaskQueueDisplay({ waiting, completed, currentTask }: TaskQueueDisplayProps) {
+export function TaskQueueDisplay({ waiting, completed }: TaskQueueDisplayProps) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="bg-zinc-900 rounded-lg shadow-lg p-6">

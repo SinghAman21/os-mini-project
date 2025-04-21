@@ -1,4 +1,3 @@
-import React from 'react';
 import { Plane, Users, Clock, CheckCircle } from 'lucide-react';
 
 export function LandingPage() {

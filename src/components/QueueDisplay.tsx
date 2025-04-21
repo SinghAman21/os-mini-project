@@ -1,4 +1,3 @@
-import React from 'react';
 import { Clock, Users } from 'lucide-react';
 import type { Passenger } from '../types';
 
@@ -38,7 +37,7 @@ export function QueueDisplay({ title, queue, currentlyServing }: QueueDisplayPro
       </div>
 
       <div className="space-y-2">
-        {queue.map((passenger, index) => (
+        {queue.map((passenger) => (
           <div
             key={passenger.id}
             className="p-3 bg-gray-50 rounded border border-gray-200 flex justify-between items-center"
