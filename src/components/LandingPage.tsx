@@ -9,7 +9,8 @@ export function LandingPage() {
           <Plane className="h-20 w-20 animate-[fly_2s_ease-in-out_infinite] text-white" />
         </div>
         <h1 className="text-5xl font-bold mb-6 animate-[slideDown_1s_ease-out]">
-          Welcome to Optimizing Airline Check-in with Priority
+          Welcome to Airline Check-Ins with Priority 
+
         </h1>
         <p className="text-xl mb-12 text-gray-300 animate-[fadeIn_2s_ease-out]">
           Streamlining passenger processing with intelligent priority scheduling
